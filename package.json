@@ -1,0 +1,26 @@
+{
+  "name": "backend-test",
+  "version": "1.0.0",
+  "description": "Ultimate.ai backend test",
+  "main": "chatbot.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.9.3",
+    "mocha": "^7.1.1",
+    "ts-node": "^8.8.1"
+  },
+  "scripts": {
+    "test": "mocha -r ts-node/register test/chatBotTest.ts",
+    "example": "./node_modules/.bin/tsc && node dist/example.js",
+    "transpile": "./node_modules/.bin/tsc"
+  },
+  "author": "Mukesh Kumar Kharita",
+  "license": "MIT"
+}
